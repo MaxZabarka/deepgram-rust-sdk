@@ -42,6 +42,10 @@ pub enum Tier {
 
     #[allow(missing_docs)]
     Base,
+
+
+    #[allow(missing_docs)]
+    Nova,
 }
 
 /// Used as a parameter for [`OptionsBuilder::model`] and [`OptionsBuilder::multichannel_with_models`].
@@ -1215,6 +1219,7 @@ impl AsRef<str> for Tier {
         match self {
             Enhanced => "enhanced",
             Base => "base",
+            Nova => "nova",
         }
     }
 }
